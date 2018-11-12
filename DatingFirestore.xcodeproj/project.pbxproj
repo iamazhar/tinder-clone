@@ -13,8 +13,9 @@
 		FFE78057219969CB000C1194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE78055219969CB000C1194 /* LaunchScreen.storyboard */; };
 		FFE7806021996D29000C1194 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7805F21996D29000C1194 /* Extensions+UIView.swift */; };
 		FFE78063219984AD000C1194 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE78062219984AD000C1194 /* HomeBottomControlsStackView.swift */; };
-		FFE780652199866A000C1194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE780642199866A000C1194 /* Assets.xcassets */; };
 		FFE780672199887D000C1194 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE780662199887D000C1194 /* TopNavigationStackView.swift */; };
+		FFE7806921998FF9000C1194 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7806821998FF9000C1194 /* CardView.swift */; };
+		FFE7806B219990C3000C1194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE7806A219990C3000C1194 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		FFE78058219969CB000C1194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFE7805F21996D29000C1194 /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		FFE78062219984AD000C1194 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
-		FFE780642199866A000C1194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE780662199887D000C1194 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		FFE7806821998FF9000C1194 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FFE7806A219990C3000C1194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,7 @@
 				FFE7804C219969C9000C1194 /* AppDelegate.swift */,
 				FFE7804E219969C9000C1194 /* ViewController.swift */,
 				FFE78050219969C9000C1194 /* Main.storyboard */,
-				FFE780642199866A000C1194 /* Assets.xcassets */,
+				FFE7806A219990C3000C1194 /* Assets.xcassets */,
 				FFE78055219969CB000C1194 /* LaunchScreen.storyboard */,
 				FFE78058219969CB000C1194 /* Info.plist */,
 			);
@@ -85,6 +87,7 @@
 			children = (
 				FFE78062219984AD000C1194 /* HomeBottomControlsStackView.swift */,
 				FFE780662199887D000C1194 /* TopNavigationStackView.swift */,
+				FFE7806821998FF9000C1194 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE78057219969CB000C1194 /* LaunchScreen.storyboard in Resources */,
-				FFE780652199866A000C1194 /* Assets.xcassets in Resources */,
+				FFE7806B219990C3000C1194 /* Assets.xcassets in Resources */,
 				FFE78052219969C9000C1194 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +167,7 @@
 				FFE78063219984AD000C1194 /* HomeBottomControlsStackView.swift in Sources */,
 				FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */,
 				FFE7806021996D29000C1194 /* Extensions+UIView.swift in Sources */,
+				FFE7806921998FF9000C1194 /* CardView.swift in Sources */,
 				FFE780672199887D000C1194 /* TopNavigationStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

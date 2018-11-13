@@ -20,14 +20,22 @@ class CardView: UIView {
     
     // encapsulation
     fileprivate let imageView = UIImageView(image: #imageLiteral(resourceName: "lady5c"))
+    fileprivate let gradientLayer = CAGradientLayer()
     fileprivate let informationLabel = UILabel()
     
-    //Configurations
+    // configurations
     fileprivate let threshold: CGFloat = 150
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setupLayout()
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+        addGestureRecognizer(panGesture)
+    }
+    
+    fileprivate func setupLayout() {
         //custom drawing code
         layer.cornerRadius = 10
         clipsToBounds = true
@@ -37,6 +45,9 @@ class CardView: UIView {
         imageView.clipsToBounds = true
         imageView.fillSuperview()
         
+        // gradient layer
+        setupGradientLayer()
+        
         addSubview(informationLabel)
         informationLabel.anchor(top: nil,
                                 leading: leadingAnchor,
@@ -45,16 +56,30 @@ class CardView: UIView {
                                 padding: .init(top: 0, left: 16, bottom: 16, right: 16))
         
         informationLabel.textColor = .white
-        informationLabel.font = UIFont.systemFont(ofSize: 34, weight: .heavy)
         informationLabel.numberOfLines = 0
+    }
+    
+    
+    fileprivate func setupGradientLayer() {
+        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradientLayer.locations = [0.5, 1.1]
         
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-        addGestureRecognizer(panGesture)
+        layer.addSublayer(gradientLayer)
+    }
+    
+    override func layoutSubviews() {
+        gradientLayer.frame = self.frame
+        
     }
     
     @objc fileprivate func handlePan(gesture: UIPanGestureRecognizer) {
 
         switch gesture.state {
+        case .began:
+            // remove any remnants from previous animations on the card sub views
+            superview?.subviews.forEach({ (subView) in
+                subView.layer.removeAllAnimations()
+            })
         case .changed:
             handleChanged(gesture)
         case .ended:

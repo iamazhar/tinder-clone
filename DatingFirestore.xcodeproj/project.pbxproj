@@ -118,9 +118,9 @@
 		FFE7806121998483000C1194 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FFE7806821998FF9000C1194 /* CardView.swift */,
 				FFE78062219984AD000C1194 /* HomeBottomControlsStackView.swift */,
 				FFE780662199887D000C1194 /* TopNavigationStackView.swift */,
-				FFE7806821998FF9000C1194 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

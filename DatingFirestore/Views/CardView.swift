@@ -10,8 +10,17 @@ import UIKit
 
 class CardView: UIView {
     
-    let imageView = UIImageView(image: #imageLiteral(resourceName: "lady5c"))
-    let informationLabel = UILabel()
+    var cardViewModel: CardViewModel! {
+        didSet {
+            imageView.image = UIImage(named: cardViewModel.imageName)
+            informationLabel.attributedText = cardViewModel.attributedText
+            informationLabel.textAlignment = cardViewModel.textAlignment
+        }
+    }
+    
+    // encapsulation
+    fileprivate let imageView = UIImageView(image: #imageLiteral(resourceName: "lady5c"))
+    fileprivate let informationLabel = UILabel()
     
     //Configurations
     fileprivate let threshold: CGFloat = 150
@@ -35,7 +44,6 @@ class CardView: UIView {
                                 trailing: trailingAnchor,
                                 padding: .init(top: 0, left: 16, bottom: 16, right: 16))
         
-        informationLabel.text = "TEST NAME TEST NAME AGE"
         informationLabel.textColor = .white
         informationLabel.font = UIFont.systemFont(ofSize: 34, weight: .heavy)
         informationLabel.numberOfLines = 0

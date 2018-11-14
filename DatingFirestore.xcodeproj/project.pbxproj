@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF569F60219BF1DB008DB43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF569F5F219BF1DB008DB43E /* Assets.xcassets */; };
 		FFCD7131219AD48C009DD023 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7130219AD48C009DD023 /* User.swift */; };
 		FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7136219AE3A6009DD023 /* CardViewModel.swift */; };
 		FFCD7139219AF515009DD023 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7138219AF515009DD023 /* Advertiser.swift */; };
-		FFCD713B219AF81D009DD023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFCD713A219AF81D009DD023 /* Assets.xcassets */; };
 		FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7804C219969C9000C1194 /* AppDelegate.swift */; };
 		FFE7804F219969C9000C1194 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7804E219969C9000C1194 /* HomeController.swift */; };
 		FFE78052219969C9000C1194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE78050219969C9000C1194 /* Main.storyboard */; };
@@ -22,10 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF569F5F219BF1DB008DB43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFCD7130219AD48C009DD023 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFCD7136219AE3A6009DD023 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		FFCD7138219AF515009DD023 /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
-		FFCD713A219AF81D009DD023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE78049219969C9000C1194 /* DatingFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE7804C219969C9000C1194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE7804E219969C9000C1194 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				FFE7805E21996D00000C1194 /* Extensions */,
 				FFE7804C219969C9000C1194 /* AppDelegate.swift */,
 				FFE78050219969C9000C1194 /* Main.storyboard */,
-				FFCD713A219AF81D009DD023 /* Assets.xcassets */,
+				FF569F5F219BF1DB008DB43E /* Assets.xcassets */,
 				FFE78055219969CB000C1194 /* LaunchScreen.storyboard */,
 				FFE78058219969CB000C1194 /* Info.plist */,
 			);
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE78057219969CB000C1194 /* LaunchScreen.storyboard in Resources */,
-				FFCD713B219AF81D009DD023 /* Assets.xcassets in Resources */,
+				FF569F60219BF1DB008DB43E /* Assets.xcassets in Resources */,
 				FFE78052219969C9000C1194 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

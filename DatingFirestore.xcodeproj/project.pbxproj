@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C17A673F6D9EECF0CCB0A63 /* Pods_DatingFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */; };
 		FF569F60219BF1DB008DB43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF569F5F219BF1DB008DB43E /* Assets.xcassets */; };
 		FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F61219C1511008DB43E /* RegistrationController.swift */; };
 		FF569F64219C1C4E008DB43E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F63219C1C4E008DB43E /* CustomTextField.swift */; };
+		FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */; };
 		FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */; };
 		FFCD7131219AD48C009DD023 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7130219AD48C009DD023 /* User.swift */; };
 		FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7136219AE3A6009DD023 /* CardViewModel.swift */; };
@@ -25,9 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B64693DB7A74CCAA82B99D8 /* Pods-DatingFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.release.xcconfig"; sourceTree = "<group>"; };
+		5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE58702225649A94D2FF270 /* Pods-DatingFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.debug.xcconfig"; sourceTree = "<group>"; };
 		FF569F5F219BF1DB008DB43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF569F61219C1511008DB43E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		FF569F63219C1C4E008DB43E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FFCD7130219AD48C009DD023 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFCD7136219AE3A6009DD023 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
@@ -49,12 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C17A673F6D9EECF0CCB0A63 /* Pods_DatingFirestore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34E6F749D3DD2E15EB6A3369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FD127721C5163B90E08EC52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE58702225649A94D2FF270 /* Pods-DatingFirestore.debug.xcconfig */,
+				3B64693DB7A74CCAA82B99D8 /* Pods-DatingFirestore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFCD712F219AD481009DD023 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +111,8 @@
 			children = (
 				FFE7804B219969C9000C1194 /* DatingFirestore */,
 				FFE7804A219969C9000C1194 /* Products */,
+				9FD127721C5163B90E08EC52 /* Pods */,
+				34E6F749D3DD2E15EB6A3369 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +137,7 @@
 				FF569F5F219BF1DB008DB43E /* Assets.xcassets */,
 				FFE78055219969CB000C1194 /* LaunchScreen.storyboard */,
 				FFE78058219969CB000C1194 /* Info.plist */,
+				FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */,
 			);
 			path = DatingFirestore;
 			sourceTree = "<group>";
@@ -141,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFE7805B219969CB000C1194 /* Build configuration list for PBXNativeTarget "DatingFirestore" */;
 			buildPhases = (
+				6AA2D866A530FC082F9FE7BD /* [CP] Check Pods Manifest.lock */,
 				FFE78045219969C9000C1194 /* Sources */,
 				FFE78046219969C9000C1194 /* Frameworks */,
 				FFE78047219969C9000C1194 /* Resources */,
+				491EB8046E9162B4F2CEE843 /* [CP] Embed Pods Frameworks */,
+				EA936B6E873ED1F5F818B401 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,11 +224,90 @@
 			files = (
 				FFE78057219969CB000C1194 /* LaunchScreen.storyboard in Resources */,
 				FF569F60219BF1DB008DB43E /* Assets.xcassets in Resources */,
+				FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */,
 				FFE78052219969C9000C1194 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		491EB8046E9162B4F2CEE843 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA2D866A530FC082F9FE7BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatingFirestore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA936B6E873ED1F5F818B401 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFE78045219969C9000C1194 /* Sources */ = {
@@ -360,6 +469,7 @@
 		};
 		FFE7805C219969CB000C1194 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE58702225649A94D2FF270 /* Pods-DatingFirestore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +488,7 @@
 		};
 		FFE7805D219969CB000C1194 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B64693DB7A74CCAA82B99D8 /* Pods-DatingFirestore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

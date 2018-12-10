@@ -12,6 +12,7 @@
 		FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F61219C1511008DB43E /* RegistrationController.swift */; };
 		FF569F64219C1C4E008DB43E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F63219C1C4E008DB43E /* CustomTextField.swift */; };
 		FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */; };
+		FF5F845821BE7DF900D4331F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F845721BE7DF900D4331F /* Bindable.swift */; };
 		FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */; };
 		FFCD7131219AD48C009DD023 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7130219AD48C009DD023 /* User.swift */; };
 		FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7136219AE3A6009DD023 /* CardViewModel.swift */; };
@@ -34,6 +35,7 @@
 		FF569F61219C1511008DB43E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		FF569F63219C1C4E008DB43E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF5F845721BE7DF900D4331F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FFCD7130219AD48C009DD023 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFCD7136219AE3A6009DD023 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				FFE7804E219969C9000C1194 /* HomeController.swift */,
 				FF569F61219C1511008DB43E /* RegistrationController.swift */,
 				FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */,
+				FF5F845721BE7DF900D4331F /* Bindable.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5F845821BE7DF900D4331F /* Bindable.swift in Sources */,
 				FFE7804F219969C9000C1194 /* HomeController.swift in Sources */,
 				FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */,
 				FF569F64219C1C4E008DB43E /* CustomTextField.swift in Sources */,

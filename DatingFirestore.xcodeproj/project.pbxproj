@@ -14,6 +14,7 @@
 		FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */; };
 		FF5F845821BE7DF900D4331F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F845721BE7DF900D4331F /* Bindable.swift */; };
 		FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */; };
+		FFC410E521C1199000D12F9B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC410E421C1199000D12F9B /* SettingsController.swift */; };
 		FFCD7131219AD48C009DD023 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7130219AD48C009DD023 /* User.swift */; };
 		FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7136219AE3A6009DD023 /* CardViewModel.swift */; };
 		FFCD7139219AF515009DD023 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD7138219AF515009DD023 /* Advertiser.swift */; };
@@ -37,6 +38,7 @@
 		FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF5F845721BE7DF900D4331F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		FFC410E421C1199000D12F9B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		FFCD7130219AD48C009DD023 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFCD7136219AE3A6009DD023 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		FFCD7138219AF515009DD023 /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				FF569F61219C1511008DB43E /* RegistrationController.swift */,
 				FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */,
 				FF5F845721BE7DF900D4331F /* Bindable.swift */,
+				FFC410E421C1199000D12F9B /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				FFE7806021996D29000C1194 /* Extensions+UIView.swift in Sources */,
 				FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */,
 				FFE7806921998FF9000C1194 /* CardView.swift in Sources */,
+				FFC410E521C1199000D12F9B /* SettingsController.swift in Sources */,
 				FFE780672199887D000C1194 /* TopNavigationStackView.swift in Sources */,
 				FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */,
 				FFCD7131219AD48C009DD023 /* User.swift in Sources */,

@@ -13,6 +13,7 @@
 		FF569F64219C1C4E008DB43E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F63219C1C4E008DB43E /* CustomTextField.swift */; };
 		FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */; };
 		FF5F845821BE7DF900D4331F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F845721BE7DF900D4331F /* Bindable.swift */; };
+		FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */; };
 		FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */; };
 		FFC410E521C1199000D12F9B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC410E421C1199000D12F9B /* SettingsController.swift */; };
 		FFC410E721C1243F00D12F9B /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC410E621C1243F00D12F9B /* SettingsCell.swift */; };
@@ -38,6 +39,7 @@
 		FF569F63219C1C4E008DB43E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF5F845721BE7DF900D4331F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
 		FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FFC410E421C1199000D12F9B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		FFC410E621C1243F00D12F9B /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				FFE780662199887D000C1194 /* TopNavigationStackView.swift */,
 				FF569F63219C1C4E008DB43E /* CustomTextField.swift */,
 				FFC410E621C1243F00D12F9B /* SettingsCell.swift */,
+				FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				FFE78063219984AD000C1194 /* HomeBottomControlsStackView.swift in Sources */,
 				FFCD7139219AF515009DD023 /* Advertiser.swift in Sources */,
 				FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */,
+				FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */,
 				FFE7806021996D29000C1194 /* Extensions+UIView.swift in Sources */,
 				FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */,
 				FFE7806921998FF9000C1194 /* CardView.swift in Sources */,

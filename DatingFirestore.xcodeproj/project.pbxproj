@@ -14,6 +14,7 @@
 		FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */; };
 		FF5F845821BE7DF900D4331F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F845721BE7DF900D4331F /* Bindable.swift */; };
 		FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */; };
+		FF6B377221C289B3008886D3 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B377121C289B3008886D3 /* Firebase+Utils.swift */; };
 		FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */; };
 		FFC410E521C1199000D12F9B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC410E421C1199000D12F9B /* SettingsController.swift */; };
 		FFC410E721C1243F00D12F9B /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC410E621C1243F00D12F9B /* SettingsCell.swift */; };
@@ -40,6 +41,7 @@
 		FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF5F845721BE7DF900D4331F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
+		FF6B377121C289B3008886D3 /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
 		FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		FFC410E421C1199000D12F9B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		FFC410E621C1243F00D12F9B /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FFE7805F21996D29000C1194 /* Extensions+UIView.swift */,
+				FF6B377121C289B3008886D3 /* Firebase+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */,
 				FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */,
 				FFE7806021996D29000C1194 /* Extensions+UIView.swift in Sources */,
+				FF6B377221C289B3008886D3 /* Firebase+Utils.swift in Sources */,
 				FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */,
 				FFE7806921998FF9000C1194 /* CardView.swift in Sources */,
 				FFC410E521C1199000D12F9B /* SettingsController.swift in Sources */,

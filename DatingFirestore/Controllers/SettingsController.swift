@@ -11,11 +11,17 @@ import Firebase
 import JGProgressHUD
 import SDWebImage
 
+protocol SettingsControllerDelegate {
+    func didSaveSettings()
+}
+
 class CustomImagePickerController: UIImagePickerController {
     var imageButton: UIButton?
 }
 
 class SettingsController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var delegate: SettingsControllerDelegate?
     
     // Instance Properties
     lazy var image1Button = createButton(selector: #selector(handleSelectPhoto))
@@ -98,20 +104,13 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
     var user: User?
     
     fileprivate func fetchCurrentUser() {
-        // Fetch firestore data
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        let query = Firestore.firestore().collection("users").document(uid)
-        
-        query.getDocument { (snapshot, err) in             if let err = err {
-                print("Failed to retrieve user data", err)
+        Firestore.firestore().fetchCurrentUser { (user, err) in
+            if let err = err {
+                print("Failed to fetch user:", err)
                 return
             }
-            
-            // Fetched our user here
-            guard let dictionary = snapshot?.data() else { return }
-            self.user = User(dictionary: dictionary)
+            self.user = user
             self.loadUserPhotos()
-            
             self.tableView.reloadData()
         }
     }
@@ -310,6 +309,10 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
                 return
             }
             print("Finished saving user info")
+            self.dismiss(animated: true, completion: {
+                print("Dismissal Complete")
+                self.delegate?.didSaveSettings()
+            })
         }
     }
     

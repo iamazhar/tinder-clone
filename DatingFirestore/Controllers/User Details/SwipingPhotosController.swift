@@ -10,11 +10,17 @@ import UIKit
 
 class SwipingPhotosController: UIPageViewController, UIPageViewControllerDataSource {
     
-    let controllers = [
-    PhotoController(image: #imageLiteral(resourceName: "super_like_circle")),
-    PhotoController(image: #imageLiteral(resourceName: "dismiss_circle")),
-    PhotoController(image: #imageLiteral(resourceName: "like_circle")),
-    PhotoController(image: #imageLiteral(resourceName: "refresh_circle"))]
+    var cardViewModel: CardViewModel! {
+        didSet {
+            controllers = cardViewModel.imageUrls.map({ (imageUrl) -> UIViewController in
+                let photoController = PhotoController(imageUrl: imageUrl)
+                return photoController
+            })
+            setViewControllers([controllers.first!], direction: .forward, animated: false)
+        }
+    }
+    
+    var controllers = [UIViewController]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,18 +50,21 @@ class PhotoController: UIViewController {
     
     let imageView = UIImageView(image: #imageLiteral(resourceName: "jane3"))
     
-    init(image: UIImage) {
-        imageView.image = image
+    // provide an initializer that takes in a URL instead
+    init(imageUrl: String) {
+        if let url = URL(string: imageUrl) {
+            imageView.sd_setImage(with: url)
+        }
+        
         super.init(nibName: nil, bundle: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(imageView)
         imageView.fillSuperview()
-        
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {

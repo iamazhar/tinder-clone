@@ -20,11 +20,11 @@ class CardView: UIView {
     var cardViewModel: CardViewModel! {
         didSet {
             
-            guard let imageName = cardViewModel.imageUrls.first else { return }
+            let imageName = cardViewModel.imageUrls.first ?? ""
             
             //load image using Url
             if let url = URL(string: imageName) {
-                imageView.sd_setImage(with: url)
+                imageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "photo_placeholder"), options: .continueInBackground)
             }
             
             informationLabel.attributedText = cardViewModel.attributedString
@@ -45,7 +45,7 @@ class CardView: UIView {
         cardViewModel.imageIndexObserver = { [weak self] (idx, imageUrl) in
             print("Changing photo from view model")
             if let url = URL(string: imageUrl ?? ""){
-                self?.imageView.sd_setImage(with: url)
+                self?.imageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "photo_placeholder"), options: .continueInBackground)
             }
             
             self?.barsStackView.arrangedSubviews.forEach({ (v) in

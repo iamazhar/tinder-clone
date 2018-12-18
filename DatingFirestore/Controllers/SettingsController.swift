@@ -220,6 +220,9 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
         self.user?.maxSeekingAge = Int(slider.value)
     }
     
+    static let defaultMinSeekingAge = 18
+    static let defaultMaxSeekingAge = 40
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == 5 {
@@ -228,12 +231,15 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
             ageRangeCell.maxSlider.addTarget(self, action: #selector(handleMaxAgeChange), for: .valueChanged)
             
             //Set labels on cell here
-            ageRangeCell.minLabel.text = "Min \(user?.minSeekingAge ?? -1)"
-            ageRangeCell.maxLabel.text = "Max \(user?.maxSeekingAge ?? -1)"
+            let minAge = user?.minSeekingAge ?? SettingsController.defaultMinSeekingAge
+            let maxAge = user?.maxSeekingAge ?? SettingsController.defaultMaxSeekingAge
+            
+            ageRangeCell.minLabel.text = "Min \(minAge)"
+            ageRangeCell.maxLabel.text = "Max \(maxAge)"
             
             //Set slider positions here
-            ageRangeCell.minSlider.value = Float(user?.minSeekingAge ?? -1)
-            ageRangeCell.maxSlider.value = Float(user?.maxSeekingAge ?? -1)
+            ageRangeCell.minSlider.value = Float(minAge)
+            ageRangeCell.maxSlider.value = Float(maxAge)
             
             return ageRangeCell
         }
@@ -300,8 +306,8 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
             "imageUrl3": user?.imageUrl3 ?? "",
             "age": user?.age ?? -1,
             "profession": user?.profession ?? "",
-            "minSeekingAge": user?.minSeekingAge ?? -1,
-            "maxSeekingAge": user?.maxSeekingAge ?? -1
+            "minSeekingAge": user?.minSeekingAge ?? SettingsController.defaultMinSeekingAge,
+            "maxSeekingAge": user?.maxSeekingAge ?? SettingsController.defaultMaxSeekingAge
         ]
         
         let hud = JGProgressHUD(style: .dark)

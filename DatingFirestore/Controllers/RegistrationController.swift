@@ -16,7 +16,7 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
         
         let image = info[.originalImage] as? UIImage
         registrationViewModel.bindableImage.value = image
-        
+        registrationViewModel.checkFormValidity()
         dismiss(animated: true, completion: nil)
     }
     
@@ -160,7 +160,7 @@ class RegistrationController: UIViewController {
         
         registrationViewModel.bindableIsRegistering.bind {[unowned self] (isRegistering) in
             if isRegistering == true {
-                self.registeringHUD.textLabel.text = "Register"
+                self.registeringHUD.textLabel.text = "Registering"
                 self.registeringHUD.show(in: self.view)
             } else {
                 self.registeringHUD.dismiss(animated: true)

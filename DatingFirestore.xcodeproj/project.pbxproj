@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C17A673F6D9EECF0CCB0A63 /* Pods_DatingFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */; };
+		FF539B4521C896A700D416CF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4321C896A700D416CF /* LoginViewModel.swift */; };
+		FF539B4621C896A700D416CF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4421C896A700D416CF /* LoginController.swift */; };
 		FF569F60219BF1DB008DB43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF569F5F219BF1DB008DB43E /* Assets.xcassets */; };
 		FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F61219C1511008DB43E /* RegistrationController.swift */; };
 		FF569F64219C1C4E008DB43E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F63219C1C4E008DB43E /* CustomTextField.swift */; };
@@ -35,6 +37,8 @@
 		3B64693DB7A74CCAA82B99D8 /* Pods-DatingFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.release.xcconfig"; sourceTree = "<group>"; };
 		5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE58702225649A94D2FF270 /* Pods-DatingFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.debug.xcconfig"; sourceTree = "<group>"; };
+		FF539B4321C896A700D416CF /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FF539B4421C896A700D416CF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FF569F5F219BF1DB008DB43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF569F61219C1511008DB43E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		FF569F63219C1C4E008DB43E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF539B4221C8950500D416CF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FF539B4421C896A700D416CF /* LoginController.swift */,
+				FF539B4321C896A700D416CF /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		FFCD712F219AD481009DD023 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		FFCD7134219AE2F8009DD023 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF539B4221C8950500D416CF /* Login */,
 				FFE7804E219969C9000C1194 /* HomeController.swift */,
 				FF569F61219C1511008DB43E /* RegistrationController.swift */,
 				FFC0AF8121BE47B90041D667 /* RegistrationViewModel.swift */,
@@ -329,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF539B4621C896A700D416CF /* LoginController.swift in Sources */,
 				FF5F845821BE7DF900D4331F /* Bindable.swift in Sources */,
 				FFE7804F219969C9000C1194 /* HomeController.swift in Sources */,
 				FFC0AF8221BE47B90041D667 /* RegistrationViewModel.swift in Sources */,
@@ -337,6 +352,7 @@
 				FFCD7139219AF515009DD023 /* Advertiser.swift in Sources */,
 				FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */,
 				FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */,
+				FF539B4521C896A700D416CF /* LoginViewModel.swift in Sources */,
 				FFE7806021996D29000C1194 /* Extensions+UIView.swift in Sources */,
 				FF6B377221C289B3008886D3 /* Firebase+Utils.swift in Sources */,
 				FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */,

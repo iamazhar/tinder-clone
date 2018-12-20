@@ -200,22 +200,38 @@ class CardView: UIView {
         let shouldDismissCard = abs(gesture.translation(in: nil).x) > threshold
         let translationDirection: CGFloat = gesture.translation(in: nil).x > 0 ? 1 : -1
         
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
-            if shouldDismissCard{
-                self.frame = CGRect(x: 600 * translationDirection, y: 0, width: self.frame.width, height: self.frame.height)
-            } else {
-                self.transform = .identity
-            }
+        if shouldDismissCard {
+            //hack solution
+            guard let homeController = self.delegate as? HomeController else { return }
             
-        }) { (_) in
-            self.transform = .identity
-            if shouldDismissCard {
-                self.removeFromSuperview()
-                
-                //reset the topCardView
-                self.delegate?.didRemoveCard(cardView: self)
+            if translationDirection == 1 {
+                homeController.handleLike()
+            } else {
+                homeController.handleDislike()
             }
+        } else {
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
+                self.transform = .identity
+            })
         }
+        
+        
+//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
+//            if shouldDismissCard{
+//                self.frame = CGRect(x: 600 * translationDirection, y: 0, width: self.frame.width, height: self.frame.height)
+//            } else {
+//                self.transform = .identity
+//            }
+//
+//        }) { (_) in
+//            self.transform = .identity
+//            if shouldDismissCard {
+//                self.removeFromSuperview()
+//
+//                //reset the topCardView
+//                self.delegate?.didRemoveCard(cardView: self)
+//            }
+//        }
     }
     
     required init?(coder aDecoder: NSCoder) {

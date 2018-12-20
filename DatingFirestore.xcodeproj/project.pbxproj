@@ -33,6 +33,7 @@
 		FFE78063219984AD000C1194 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE78062219984AD000C1194 /* HomeBottomControlsStackView.swift */; };
 		FFE780672199887D000C1194 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE780662199887D000C1194 /* TopNavigationStackView.swift */; };
 		FFE7806921998FF9000C1194 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7806821998FF9000C1194 /* CardView.swift */; };
+		FFE97AA821CA583400E28E92 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE97AA721CA583300E28E92 /* PhotoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		FFE78062219984AD000C1194 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		FFE780662199887D000C1194 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		FFE7806821998FF9000C1194 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FFE97AA721CA583300E28E92 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				FF539B4A21C8C9FC00D416CF /* UserDetailsController.swift */,
 				FF539B4E21C8F1D000D416CF /* SwipingPhotosController.swift */,
+				FFE97AA721CA583300E28E92 /* PhotoController.swift */,
 			);
 			path = "User Details";
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				FFCD7137219AE3A6009DD023 /* CardViewModel.swift in Sources */,
 				FFE7806921998FF9000C1194 /* CardView.swift in Sources */,
 				FFC410E521C1199000D12F9B /* SettingsController.swift in Sources */,
+				FFE97AA821CA583400E28E92 /* PhotoController.swift in Sources */,
 				FFE780672199887D000C1194 /* TopNavigationStackView.swift in Sources */,
 				FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */,
 				FFCD7131219AD48C009DD023 /* User.swift in Sources */,

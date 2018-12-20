@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		5C17A673F6D9EECF0CCB0A63 /* Pods_DatingFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */; };
 		FF2F1AD821CBAAF000DC0C77 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1AD721CBAAF000DC0C77 /* MatchView.swift */; };
+		FF2F1ADA21CBB8B900DC0C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2F1AD921CBB8B800DC0C77 /* Assets.xcassets */; };
+		FF2F1ADC21CBBB6200DC0C77 /* SendMessageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1ADB21CBBB6200DC0C77 /* SendMessageButton.swift */; };
+		FF2F1ADE21CBBE7800DC0C77 /* KeepSwipingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1ADD21CBBE7800DC0C77 /* KeepSwipingButton.swift */; };
 		FF539B4521C896A700D416CF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4321C896A700D416CF /* LoginViewModel.swift */; };
 		FF539B4621C896A700D416CF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4421C896A700D416CF /* LoginController.swift */; };
 		FF539B4B21C8C9FC00D416CF /* UserDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4A21C8C9FC00D416CF /* UserDetailsController.swift */; };
 		FF539B4F21C8F1D000D416CF /* SwipingPhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4E21C8F1D000D416CF /* SwipingPhotosController.swift */; };
-		FF539B5121C93A0E00D416CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF539B5021C93A0D00D416CF /* Assets.xcassets */; };
 		FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F61219C1511008DB43E /* RegistrationController.swift */; };
 		FF569F64219C1C4E008DB43E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF569F63219C1C4E008DB43E /* CustomTextField.swift */; };
 		FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */; };
@@ -42,11 +44,13 @@
 		5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE58702225649A94D2FF270 /* Pods-DatingFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.debug.xcconfig"; sourceTree = "<group>"; };
 		FF2F1AD721CBAAF000DC0C77 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		FF2F1AD921CBB8B800DC0C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF2F1ADB21CBBB6200DC0C77 /* SendMessageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageButton.swift; sourceTree = "<group>"; };
+		FF2F1ADD21CBBE7800DC0C77 /* KeepSwipingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepSwipingButton.swift; sourceTree = "<group>"; };
 		FF539B4321C896A700D416CF /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FF539B4421C896A700D416CF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FF539B4A21C8C9FC00D416CF /* UserDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsController.swift; sourceTree = "<group>"; };
 		FF539B4E21C8F1D000D416CF /* SwipingPhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingPhotosController.swift; sourceTree = "<group>"; };
-		FF539B5021C93A0D00D416CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF569F61219C1511008DB43E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		FF569F63219C1C4E008DB43E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -179,7 +183,7 @@
 				FFE7805E21996D00000C1194 /* Extensions */,
 				FFE7804C219969C9000C1194 /* AppDelegate.swift */,
 				FFE78050219969C9000C1194 /* Main.storyboard */,
-				FF539B5021C93A0D00D416CF /* Assets.xcassets */,
+				FF2F1AD921CBB8B800DC0C77 /* Assets.xcassets */,
 				FFE78055219969CB000C1194 /* LaunchScreen.storyboard */,
 				FFE78058219969CB000C1194 /* Info.plist */,
 				FF5F845521BE67BE00D4331F /* GoogleService-Info.plist */,
@@ -206,6 +210,8 @@
 				FFC410E621C1243F00D12F9B /* SettingsCell.swift */,
 				FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */,
 				FF2F1AD721CBAAF000DC0C77 /* MatchView.swift */,
+				FF2F1ADB21CBBB6200DC0C77 /* SendMessageButton.swift */,
+				FF2F1ADD21CBBE7800DC0C77 /* KeepSwipingButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,7 +279,7 @@
 			files = (
 				FFE78057219969CB000C1194 /* LaunchScreen.storyboard in Resources */,
 				FF5F845621BE67BE00D4331F /* GoogleService-Info.plist in Resources */,
-				FF539B5121C93A0E00D416CF /* Assets.xcassets in Resources */,
+				FF2F1ADA21CBB8B900DC0C77 /* Assets.xcassets in Resources */,
 				FFE78052219969C9000C1194 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +377,7 @@
 				FFE78063219984AD000C1194 /* HomeBottomControlsStackView.swift in Sources */,
 				FFCD7139219AF515009DD023 /* Advertiser.swift in Sources */,
 				FF539B4B21C8C9FC00D416CF /* UserDetailsController.swift in Sources */,
+				FF2F1ADE21CBBE7800DC0C77 /* KeepSwipingButton.swift in Sources */,
 				FF2F1AD821CBAAF000DC0C77 /* MatchView.swift in Sources */,
 				FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */,
 				FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */,
@@ -384,6 +391,7 @@
 				FFE780672199887D000C1194 /* TopNavigationStackView.swift in Sources */,
 				FF569F62219C1511008DB43E /* RegistrationController.swift in Sources */,
 				FFCD7131219AD48C009DD023 /* User.swift in Sources */,
+				FF2F1ADC21CBBB6200DC0C77 /* SendMessageButton.swift in Sources */,
 				FFC410E721C1243F00D12F9B /* SettingsCell.swift in Sources */,
 				FF539B4F21C8F1D000D416CF /* SwipingPhotosController.swift in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C17A673F6D9EECF0CCB0A63 /* Pods_DatingFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */; };
+		FF2F1AD821CBAAF000DC0C77 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1AD721CBAAF000DC0C77 /* MatchView.swift */; };
 		FF539B4521C896A700D416CF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4321C896A700D416CF /* LoginViewModel.swift */; };
 		FF539B4621C896A700D416CF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4421C896A700D416CF /* LoginController.swift */; };
 		FF539B4B21C8C9FC00D416CF /* UserDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF539B4A21C8C9FC00D416CF /* UserDetailsController.swift */; };
@@ -40,6 +41,7 @@
 		3B64693DB7A74CCAA82B99D8 /* Pods-DatingFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.release.xcconfig"; sourceTree = "<group>"; };
 		5AD3031F449B524D82AA180D /* Pods_DatingFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE58702225649A94D2FF270 /* Pods-DatingFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingFirestore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatingFirestore/Pods-DatingFirestore.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2F1AD721CBAAF000DC0C77 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		FF539B4321C896A700D416CF /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FF539B4421C896A700D416CF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FF539B4A21C8C9FC00D416CF /* UserDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				FF569F63219C1C4E008DB43E /* CustomTextField.swift */,
 				FFC410E621C1243F00D12F9B /* SettingsCell.swift */,
 				FF6B376F21C254C1008886D3 /* AgeRangeCell.swift */,
+				FF2F1AD721CBAAF000DC0C77 /* MatchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				FFE78063219984AD000C1194 /* HomeBottomControlsStackView.swift in Sources */,
 				FFCD7139219AF515009DD023 /* Advertiser.swift in Sources */,
 				FF539B4B21C8C9FC00D416CF /* UserDetailsController.swift in Sources */,
+				FF2F1AD821CBAAF000DC0C77 /* MatchView.swift in Sources */,
 				FFE7804D219969C9000C1194 /* AppDelegate.swift in Sources */,
 				FF6B377021C254C1008886D3 /* AgeRangeCell.swift in Sources */,
 				FF539B4521C896A700D416CF /* LoginViewModel.swift in Sources */,

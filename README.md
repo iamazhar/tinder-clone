@@ -1,5 +1,5 @@
 # Tinder-Clone
-Tinder clone built upon the Firestore Firebase database solution; A personal project to learn and practice the creation of the various moving parts of a dating app programmatically.
+Tinder clone built upon the Firestore Firebase database solution. :warning: You will need to setup your own Firebase project and add your firebase plist file to the project.
 
 Supports: iOS 10.x and above
 

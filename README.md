@@ -13,7 +13,7 @@ Supports: iOS 10.x and above
 
 ## Dependencies:
 
-The project is using cocoapods for managing external libraries and a Gemfile for managing the cocoapods version.
+The project is using cocoapods for managing external libraries.
 
 Install the pods
 

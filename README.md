@@ -3,8 +3,8 @@ Tinder clone built upon the Firestore Firebase database solution; A personal pro
 
 Supports: iOS 10.x and above
 
-![Screenshot 1](1.png)
-![Screenshot 2](2.png)
+![Screen 1](1.png)
+![Screen 2](2.png)
 
 
 ## Branches:

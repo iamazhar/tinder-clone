@@ -1,34 +1,44 @@
-# Tinder-Clone :couple_with_heart:
-Tinder clone built upon the Firestore Firebase database solution. :warning: You will need to setup your own Firebase project and add your firebase plist file to the project.
+# Tinder Clone
 
-Supports: iOS 10.x and above
+`Tinder Clone` is a project that recreates the fundamental features of the popular dating app, Tinder, using Swift. This project is perfect for those who want to learn about implementing Tinder's iconic swipe and match functionality.
 
 ![Screen](2.png)
 
+## Features
 
-## Branches:
+- Swipeable card interface, similar to Tinder's
+- Match making functionality
+- User-friendly UI
+- Built using Swift
 
-* master - stable app release
-* develop - development branch, merge your feature branches here
+## Usage
 
-## Dependencies:
+To use this in your project:
 
-The project is using cocoapods for managing external libraries.
-
-Install the pods
-
+1. Clone the repository:
+```bash
+git clone https://github.com/iamazhar/tinder-clone.git
 ```
-pod install
-```
+2. Open the project in Xcode and run it on a simulator or device.
 
-### Core Dependencies
+3. Modify and use the code to suit your own project's requirements.
 
-* SDWebImage - This library provides an async image downloader with cache support
-* JGProgressHUD - An elegant and simple progress HUD for iOS and tvOS.
+## Contributions
 
-## Project structure:
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/iamazhar/tinder-clone/issues). 
 
-* ViewModels - card view, registration view and login view MVVM layer
-* Model - model Objects
-* Views - contains all view layer code
-* Extensions - protocols, extension and utility classes
+## Author
+
+👤 **Azhar Anwar**
+
+- Github: [@iamazhar](https://github.com/iamazhar)
+- LinkedIn: [@azharcodes](https://www.linkedin.com/in/azharcodes/)
+- Email: [azharcodes@gmail.com](mailto:azharcodes@gmail.com)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed. Please see the [license file](LICENSE) for more information.
